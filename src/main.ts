@@ -11,7 +11,7 @@ const client = new Client({ intents: [
 const commands = new Collection() as Collection<string, Command>;
 
 const commanddFiles = readdirSync(join(process.cwd(), 'dist', 'commands'))
-  .filter(file => file.endsWith('.js'));
+  .filter((file: any) => file.endsWith('.js'));
 
 console.log(commanddFiles);
 
