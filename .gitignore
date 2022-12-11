@@ -1,0 +1,4 @@
+*.env
+node_modules
+# Compiled from src/ *.ts to dist/ *.js
+dist
